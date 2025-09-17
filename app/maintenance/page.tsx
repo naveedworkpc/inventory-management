@@ -1,8 +1,9 @@
-import { Search, ChevronDown, Trash2, Plus } from "lucide-react"
+import { Search, Trash2, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Image from "next/image"
+import Header from "@/components/Header"
 
 // Sample component data for the maintenance page
 const componentData = [
@@ -47,45 +48,7 @@ const componentData = [
 export default function SKUMaintenance() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header Navigation */}
-      <header className="bg-gray-800 text-white px-4 py-3">
-        <div className="flex items-center justify-between">
-          <nav className="flex items-center space-x-6">
-            <a href="#" className="text-gray-300 hover:text-white">
-              To Do
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white">
-              Bundle Type
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white">
-              Categories
-            </a>
-            <a href="#" className="text-gray-300 hover:text-white">
-              Component
-            </a>
-
-            <div className="flex items-center space-x-2">
-              <button className="bg-white text-gray-800 px-3 py-1 rounded text-sm flex items-center">
-                Sku Item <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <button className="text-gray-300 hover:text-white flex items-center">
-                Reports <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-            </div>
-
-            <Button variant="secondary" size="sm">
-              Add User
-            </Button>
-          </nav>
-
-          <div className="flex items-center space-x-4">
-            <div className="text-white font-semibold border-l border-r border-white px-4">| Pagingzone |</div>
-            <span className="text-gray-300">Hello admin@industryis.com!</span>
-            <button className="text-gray-300 hover:text-white">Log off</button>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       {/* Main Content */}
       <main className="p-6">
         <h1 className="text-2xl font-semibold text-gray-800 mb-6">SKU Maintenance</h1>
