@@ -1,4 +1,5 @@
 import { Search, Download, Edit, DollarSign } from "lucide-react"
+import { FaAmazon } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
@@ -145,7 +146,7 @@ export default function InventoryManagement() {
                   <th className="px-4 py-3">ASIN</th>
                   <th className="px-4 py-3">Active</th>
                   <th className="px-4 py-3">Fulfilled By</th>
-                  <th className="px-4 py-3">Edit Amazon / $</th>
+                    <th className="px-4 py-3">Edit Amazon / $</th>
                   <th className="px-4 py-3">Condition</th>
                   <th className="px-4 py-3">Title</th>
                   <th className="px-4 py-3">Qty</th>
@@ -180,7 +181,7 @@ export default function InventoryManagement() {
                     <td className="px-4 py-3">
                       <div className="flex space-x-1">
                         <Button size="sm" className="bg-blue-500 hover:bg-blue-600 text-white p-1 h-8 w-8">
-                          <Edit className="h-4 w-4" />
+                  <FaAmazon className="h-4 w-4 text-yellow-500" />
                         </Button>
                         <Button size="sm" className="bg-blue-500 hover:bg-blue-600 text-white p-1 h-8 w-8">
                           <DollarSign className="h-4 w-4" />
